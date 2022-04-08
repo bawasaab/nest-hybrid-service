@@ -19,4 +19,8 @@ export class AppService {
     });
     console.log('analytics', this.analytics);
   }
+
+  getAnalytics() {
+    return this.analytics;
+  }
 }

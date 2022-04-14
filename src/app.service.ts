@@ -9,6 +9,7 @@ export class AppService {
   }
 
   handleUserCreated(data: CreateUserEvent) {
+    console.log('event pattern received in handleUserCreated hybrid service');
     console.log(
       'an user_created event emitted from api-gateway to analytics in handleUserCreated hybrid app',
       data,

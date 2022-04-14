@@ -14,6 +14,9 @@ export class AppController {
 
   @EventPattern('user_created')
   handleUserCreated(data: CreateUserEvent) {
+    console.log(
+      'event pattern received in handleUserCreated hybrid service controller',
+    );
     this.appService.handleUserCreated(data);
   }
 
